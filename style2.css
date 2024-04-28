@@ -1,0 +1,541 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100vw;
+}
+.logo {
+    width: 150px;
+}
+.section-container{
+    padding: 5rem 1rem;
+    font-weight: 200;
+    color: white;
+    margin-bottom: 1rem;
+    text-align: left;
+    padding: 3rem;
+}
+.header-content div{
+    font-size: 4rem;
+    line-height: 5rem;
+    margin: 94px 8px 4px;
+    text-align: left;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+    color: #fff;
+    
+}
+.section__title{
+    font-size: 1rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+.section__subtitle{
+    font-size: 1rem;
+    font-style: italic;
+    color:aliceblue;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+img{
+    width: 100%;
+}
+nav{
+    position: absolute;
+    top: 0;
+    left: 0; /* Set left to 0 to start from the left edge */
+    width: 100%; /* Make it 100% wide */
+    padding: 1rem;
+    max-width: 100rem;
+    display: flex;
+    align-items: center;
+}
+.nav-logo a{
+    text-decoration: none;
+    color:white;
+    margin-left: 15px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.nav-links {
+    /* width: 100%; Set the width to 100% of the viewport height */
+    height: 30px;
+}
+.nav-links .navi{
+    height: 30px;
+    display: flex;
+}
+/* 
+ .nav-links .navi  {
+     float: left; 
+    color: white;
+    text-align: center;
+   
+    justify-content:center;
+    align-items: center;
+    text-decoration: none;
+    display: flex;
+}
+.nav-links .navi a{
+    text-decoration: none;
+    color: white;
+    padding: 30px 20px;
+}
+
+.nav-links a acronym {
+    text-decoration: none;
+}  */
+
+.nav-links .navi a{
+    float: left;
+     /* display: block;  */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-left: 15px;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    display: flex;
+    
+}
+.nav-links a acronym{
+    text-decoration: none;
+  
+}
+
+.nav-links a:hover {
+    color: black;
+    cursor: pointer;
+}
+
+/* .nav-links a:last-child {
+    margin-right: 0;
+    margin-left: auto;
+} */
+
+.nav-links .icons {
+    margin-left:42em;
+    display: flex;
+}
+
+.nav-links .icons a {
+    text-decoration: none;
+    color: #fff;
+    padding-left: 10px;
+    margin-right: 20px;
+    float: right;
+}
+.nav-links .icons a :hover{
+    color: grey;
+    cursor: pointer;
+}
+
+header{
+    height: 100vh;
+    background-image: url(./imgs/anders-jilden-cYrMQA7a3Wc-unsplash.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header .section-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    color: beige ;
+}
+.header-content h1{
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 5rem;
+
+}
+.header-content p{
+    text-align: center;
+
+}
+.header-content button{
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(198, 115, 115);
+    color: aliceblue;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.header-content button:hover{
+    background-color: brown;
+}
+@media(min-width: 400px){
+    .nav-links{
+        display: flex;
+    }
+    header .section-container{
+        justify-content: flex-start;
+    }
+    .header-content{
+        max-width: 25rem;
+        align-items: flex-start;
+    }
+    .header-content{
+        text-align: left;
+    }
+}
+.main-content{
+    display: flex;
+    height: 100%;
+}
+.main-content .about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+    flex-direction: column;
+}
+.main-content .about h2{
+    color: orange;
+}
+.about h1{
+    padding: 5px;
+    color: black;
+    font-family: "Playfair Display", serif;
+    margin: 1px;
+    max-width: 1000px;
+}
+.about p{
+    font-family: "Sedan", serif;
+    padding: 0px 40px 0 40px;
+    text-align: center;
+}
+/* .main-content.about p{
+    justify-content: center;
+    
+} */
+.main-content .imgs{
+
+    display:flex;
+    /* justify-content: center;
+    align-items: center; */
+    max-width: 100%;
+    height:100%;
+    margin: 20px;
+    /* width: 50%; */
+    
+}
+.img1{
+    
+    padding: 0px 55px  ;
+    height: 40%;
+    width: 33%;
+}
+.img2{
+    padding: 0px 55px  ;
+    height: 40%;
+    width: 33%;
+}
+.img3{
+    padding: 0px 55px  ;
+    height: 40%;
+    width: 33%;
+}
+.main-content button{
+    margin-top: 15px ;
+    padding: 0.75rem 1rem;
+    outline: none;
+    border: none;
+    border-radius: 500px;
+    background-color: rgb(231, 139, 73);
+    color: aliceblue;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.second{
+    background-color: rgb(250, 248, 248);
+    height: 100vh;
+}
+.second .review{
+    display: flex;
+}
+.second .testimonial{
+    width: 100%;
+}
+.second h2{
+    padding-top: 70px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    width: 50%;
+    
+}
+.review  h2{
+    color: orange;
+}
+.second h1{
+    padding-left: 50px;
+    color: black;
+    font-family: "Playfair Display", serif;
+    margin: 1px;
+}
+.second p{
+    font-family: "Sedan", serif;
+    padding-left: 50px;
+    padding-right: 30px;
+    margin-top: 20px;
+}
+.third h1{
+    padding-left: 50px;
+    color: black;
+    font-family: "Playfair Display", serif;
+    margin: 1px;
+}
+.third h2{
+    padding-top: 70px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    width: 50%;
+    color: orange;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: fit-content;
+   
+}
+
+.feature-box {
+    font-family: "Sedan", serif;
+    margin: 20px;
+    height: max-content;
+    width: 300px;
+    color: black;
+    background-color: #F9FDFD;
+    padding: 20px 20px 50px 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    overflow: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.four{
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: orange;
+    display: flex;
+    height: 80px;
+    height: fit-content;
+    margin-top: 5em;
+}
+.four h2{
+    width: 90%;
+    padding-top: em;
+}
+@media (min-width: 400px) {
+    .main-content {
+      display: flex; 
+      flex-wrap: wrap; 
+    }
+    .main-content img {
+      width: 100%; 
+      box-sizing: border-box; 
+      padding: 5px; 
+    }
+}
+.faq {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .question {
+    margin-bottom: 10px;
+  }
+  
+  .question input[type="checkbox"] {
+    display: none;
+  }
+  
+  .question p {
+    cursor: pointer;
+    font-size: 18px;
+    margin: 20px;
+    padding: 15px;
+  }
+  
+  .answer {
+    display: none;
+  }
+  
+  .toggle-symbol {
+    margin-right: 5px;
+  }
+  
+  /* Show answer and change symbol to minus when checked */
+  .question input[type="checkbox"]:checked + label .toggle-symbol::before {
+    content: "-";
+  }
+  
+  .question input[type="checkbox"]:checked + label + .answer {
+    display: block;
+  }
+  
+  /* Hide answer and change symbol to plus when not checked */
+  .question input[type="checkbox"]:not(:checked) + label .toggle-symbol::before {
+    content: "+";
+  }
+  
+  .question input[type="checkbox"]:not(:checked) + label + .answer {
+    display: none;
+  }
+.four .btn{
+    position: relative;
+    /* left: 80%; */
+    top: 50%;
+    height: 3px;
+    width: 120px;
+    padding: 1rem;
+    padding-bottom: 30px;
+    text-align: center;
+    justify-content: center;
+    border: 1px white solid;
+    display: flex;
+    /* margin-left: 300px;
+    margin-top: 50px; */
+    margin-top: 25px;
+    border-radius: 50px;
+    background-color: orange;
+    color: aliceblue;
+    font-size: 12px;
+    cursor: pointer;
+    
+} 
+  
+.four .btn:hover{
+    background-color: aliceblue;
+    color: orange;
+}
+
+.client-section{ 
+    position: relative;
+}
+
+.client-section::before{
+ position: absolute;
+ background-color: rgb(250, 248, 248);
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 10px;
+}
+
+.clients i:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 15px rgb(103, 101, 101);
+}
+.footer{
+    position: static;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+.copy {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+.contact{
+    flex: 1;
+    width: 33%;
+    margin:30px;
+    justify-content: center;
+    text-align: center;
+}
+.contact ul{
+    margin-top:1rem;
+    list-style: none;
+    text-align: center;
+}
+.services{
+    flex: 1;
+    width: 33%;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+}
+.services ul{
+    margin-top:1rem ;
+    list-style-type: none;
+}
+.services li:hover{
+    color: rgb(61, 60, 60);
+    cursor: pointer;
+}
+.company{
+    flex: 1;
+    width: 33%;
+    margin: 30px;
+    justify-content: center;
+    text-align: center;
+}
+.company ul{
+    margin-top:1rem ;
+    list-style-type: none;
+}
+/*.company ul li{
+    margin: 5px;
+}
+
+.services ul li{
+    margin: 5px;
+}
+
+.contact ul li{
+    margin: 5px;
+}*/
+
+
+.client-section h1{
+    margin: 10px 0 10px 0;
+}
+.company li:hover{
+    color: rgb(61, 60, 60);
+    cursor: pointer;
+}
+.chatbot {
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+}
+  
+.chatbot img {
+    width: 90px; /* Adjust the size of the image */
+   height: auto;
+}
